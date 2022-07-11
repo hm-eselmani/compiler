@@ -1,0 +1,73 @@
+
+var x = 0;
+var y = 0;
+var i;
+
+
+
+
+proc f(a,b) {
+    Signature:50 at a,b in red;
+}
+
+
+// Strand
+i=0;
+while i < 25 do 
+{   
+    var k;
+    k = 10;
+    y = i*k;
+    Line at x,y in yellow;
+    i = i + 1;
+}
+
+
+// Water
+i=0;
+while i < 20 do 
+{
+    y = 240+(i*10);
+    Line at x,y in blue;
+    i = i + 1;
+}
+
+i = 0;
+
+// Sky
+
+while i < 40 do 
+{
+    y = 430+(i*10);
+    Line at x,y in skyblue;
+    i = i + 1;
+}
+
+
+// Sun
+
+x = 500;
+y = 700;
+Circle at x, y in yellowsun;
+
+
+// Boat 
+
+x = 350;
+y = 270;
+
+Boat at x,y in brown;
+
+x=20;
+y=750;
+
+// Signature
+
+if x < y
+{
+    f(10,750);
+}
+{
+    f(100, 700);
+}
+ifelse

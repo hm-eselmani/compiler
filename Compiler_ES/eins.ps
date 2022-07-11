@@ -1,0 +1,71 @@
+%!PS
+
+0 /klxx 0 def
+0 /klxy 0 def
+/klxi 0 def
+/klxf {
+4 dict begin
+/klxb exch def
+/klxa exch def
+4 dict begin
+klxa klxb /y exch def /x exch def
+1 0 0 setrgbcolor
+/Baskerville 50 selectfont x y moveto (Etike Selmani IF4A) show showpage
+end
+end
+} def
+0 /klxi exch store
+{ klxi 25 lt not {exit} if
+4 dict begin
+/klxk 0 def
+10 /klxk exch store
+klxi klxk mul /klxy exch store
+klxx klxy /y exch def /x exch def
+0.953 0.898 0.67 setrgbcolor
+30 setlinewidth newpath x y moveto 650 y lineto stroke
+klxi 1 add /klxi exch store
+end
+} loop
+0 /klxi exch store
+{ klxi 20 lt not {exit} if
+4 dict begin
+240 klxi 10 mul add /klxy exch store
+klxx klxy /y exch def /x exch def
+0.392 0.584 0.929 setrgbcolor
+30 setlinewidth newpath x y moveto 650 y lineto stroke
+klxi 1 add /klxi exch store
+end
+} loop
+0 /klxi exch store
+{ klxi 40 lt not {exit} if
+4 dict begin
+430 klxi 10 mul add /klxy exch store
+klxx klxy /y exch def /x exch def
+0.69 0.886 1 setrgbcolor
+30 setlinewidth newpath x y moveto 650 y lineto stroke
+klxi 1 add /klxi exch store
+end
+} loop
+500 /klxx exch store
+700 /klxy exch store
+klxx klxy /y exch def /x exch def
+1 0.913 0 setrgbcolor
+newpath x y 50 0 360 arc fill
+350 /klxx exch store
+270 /klxy exch store
+klxx klxy /y exch def /x exch def
+0.545 0.27 0.074 setrgbcolor
+7 setlinewidth 1 setlinecap x y newpath moveto 385 240 lineto 460 240 lineto 495 270 lineto x y closepath fill stroke
+422 270 newpath moveto 422 350 lineto stroke
+20 /klxx exch store
+750 /klxy exch store
+klxx klxy lt 
+{
+4 dict begin
+10 750 klxf end
+}
+{
+4 dict begin
+100 700 klxf end
+}
+ifelse
